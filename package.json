@@ -1,0 +1,30 @@
+{
+  "name": "@dilums/legendary-octo-succotash",
+  "version": "1.0.1",
+  "description": "just a test repo",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup index.ts --format cjs,esm --dts",
+    "release": "npm run build && npm publish --access=public",
+    "lint": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dilums/legendary-octo-succotash.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Dilum Sanjaya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dilums/legendary-octo-succotash/issues"
+  },
+  "homepage": "https://github.com/dilums/legendary-octo-succotash#readme",
+  "devDependencies": {
+    "tsup": "^7.1.0",
+    "typescript": "^5.1.6"
+  }
+}
